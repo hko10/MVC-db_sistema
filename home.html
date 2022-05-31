@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Caveat:wght@500;700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Indie+Flower&display=swap" rel="stylesheet">
+    <title>Home</title>
+
+    <style>
+        button {
+            cursor: pointer;
+            margin-right: 40px;
+            font-size: 2.6rem;
+            text-transform:inherit;
+            font-family: 'Caveat', cursive;
+            font-weight: 500;
+            border-radius: 7px;
+            border: 2px dashed var(--b_color);
+            background-color: var(--bd);
+            color: #dcdcdc;
+            background: linear-gradient(180deg,transparent,#2e3a47);
+            height: 100%;
+            width: 5em;
+            padding-left: 0.8em;
+            padding-right: 0.8em;
+        }
+
+        :root {
+            --b_color: #d6d6d6;
+            --bd: #081b33;
+        }
+
+        button:hover {
+            font-weight: 700;
+            box-shadow: 0 0 10px var(--b_color), 0 0 5px var(--b_color), 0 0 10px var(--b_color), 0 0 20px var(--b_color);
+            border: none;
+            background: none;
+            background-color: var(--b_color);
+            color: rgb(75, 75, 75);
+        }
+
+        h1 {
+            font-size: 3.4rem;
+            font-family: 'Indie Flower', cursive;
+            color: white;
+            letter-spacing: 3px;
+            margin-top: 3em;
+        }
+
+        body {
+            margin: 0;
+            background-color: var(--bd);
+        }
+
+        #ultimo {
+            margin-right: 0;
+            padding: 0;
+            width: 6em;
+        }
+
+        #cat {
+            font-size: 2.3rem;
+            width: 8em;
+            padding: 0;
+            padding-right: 6px;
+        }
+
+        .container {
+            margin-top: 5em;
+            height: 5.3em;
+        }
+    </style>
+</head>
+<body>
+    <center>
+        <h1>Escolha seu tipo de cadastro:</h1>
+        <div class="container">
+            <button onclick="document.location='/pessoa/cadastro'">Pessoa</button>
+            <button onclick="document.location='/produto/cadastro'">Produto</button>
+            <button onclick="document.location='/cat_produto/cadastro'" id="cat">Categoria do produto</button>
+            <button onclick="document.location='/funcionario/cadastro'" id="ultimo">Funcionário</button>
+        </div>
+    </center>
+</body>
+</html>
